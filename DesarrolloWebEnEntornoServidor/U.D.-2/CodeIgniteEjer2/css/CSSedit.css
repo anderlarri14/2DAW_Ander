@@ -1,0 +1,40 @@
+.container{
+   
+    width: 100%;
+    height: 100%;
+   
+}
+.content{
+    box-shadow: 0 0 15px black;
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    height: 655px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+   
+}
+input{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 30px;
+     
+}
+.registrar{
+    background-color: black;
+    color: white;
+    width: 250px;
+    height: 50px;
+}
+.registrar:hover{
+    background-color: graytext;
+}
+#contra{
+    display: none;
+}
+#contra1{
+    display: none;
+}
+

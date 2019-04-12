@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="miApp">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AngularDB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/jquery-1.11.3.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body ng-controller="miControlador">
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido1</th>
+            <th>Apellido2</th>
+            <th>Edad</th>
+            <th>Curso</th>
+        </tr>
+        <tr ng-model="alumnos" ng-repeat="ikasle in ikasleak">
+            <td>{{ikasle.nombre}}</td>
+            <td>{{ikasle.apellido1}}</td>
+            <td>{{ikasle.apellido2}}</td>
+            <td>{{ikasle.edad}}</td>
+            <td>{{ikasle.Curso}}</td>
+        </tr>
+    </table>
+</body>
+</html>

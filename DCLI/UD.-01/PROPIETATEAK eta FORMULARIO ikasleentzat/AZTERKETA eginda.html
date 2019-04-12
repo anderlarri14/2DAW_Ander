@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <h1 id="titulo">ELEMENTO DESBERDINEN PROPIETATEAK LORTU</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet mi nibh, a placerat eros rutrum eu.
+        Cras porta fermentum consequat. Donec placerat erat enim, et pulvinar justo congue quis. Curabitur dictum
+        sollicitudin sollicitudin. </p>
+    <p>Duis tincidunt, eros in interdum ultricies, quam dui fringilla dam, sed cursus massa ipsum eget leo. Integer
+        viverra tempus auctor. Phasellus ullamcorper dictum nulla.</p>
+    <p>Curabitur vehicula arcu sed pulvinar aliquam. Integer eu diam id lorem aliquam feugiat. Aliquam quis tincidunt
+        erat, eget tempus eros. Fusce luctus ultrices tellus at commodo.</p>
+    <p>Nam pulvinar leo et justo scelerisque interdum.</p>
+
+    <img id="foto" src="imagenes/celtics.jpg" width="167" height="118">
+
+
+    <p>
+        <input id="bulls" type="radio" name="radio" onclick="imagen()" /> <label for="uno">BULLS</label>
+        <input id="celtics" type="radio" name="radio" onclick="imagen()" /> <label for="dos">CELTICS</label>
+        <input id="nba" type="radio" name="radio" onclick="imagen()" /> <label for="tres">NBA</label>
+    </p>
+    <button onclick=" idioma('E') ">Cambiar Euskera</button>
+    <button onclick=" idioma('C') ">Cambiar Castellano</button>
+
+    <p></p>
+
+    NOMBRE
+    <input type="text" name="Izena" id="Izena">
+    NICK
+    <input type="text" name="Nick" id="Nick">
+    CONTRASEÑA
+    <input type="password" name="Pasahitza" id="Pasahitza">
+    <button onclick="validar()"> SALUDAR </button>
+
+    <div id="SaludoAqui"> </div>
+</body>
+
+</html>

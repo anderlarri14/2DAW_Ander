@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    position: absolute;
+    display: grid;
+    grid-template-rows: auto auto;
+
+    height: 100%;
+    width: 100%;
+}
+.arriba{
+    display: inline-flex;
+    width:98%;
+    justify-self: center;       
+}
+#recuadro1{
+    width: 200px;
+    background-color: lightgray;
+    border-radius: 25px;
+    border:1px solid black;
+}
+#recuadro1:hover {
+    width: 300px;
+}
+#recuadro2 {
+    width: 200px;
+    margin-left: 5px;
+    background-color: yellow;
+    border-radius: 25px;
+    border:1px solid black;
+}
+ #recuadro2:hover {
+    animation: fade 5s infinite;
+ }
+
+ @keyframes fade {
+     100% {
+         width: 300px;
+     }
+ }
+
+.abajo{
+    display: grid;
+    width:98%;
+    justify-self: center;
+    border: 1px solid red;
+
+}

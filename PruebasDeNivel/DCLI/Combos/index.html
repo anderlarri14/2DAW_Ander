@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="miApp">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="lib/angular.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div ng-controller="miControlador">
+        <select ng-model="combo1" ng-options="aux.tipo for aux in visuals" ng-change="prueba()"></select><br>
+        <select ng-model="combo2" ng-options="aux.titulo for aux in seleccionado" ng-change="saludo()"></select><br>
+        
+        <p ng-show="combo2">Titulo: {{combo2.titulo}}</p>
+        <p ng-show="combo2">Autor: {{combo2.autor}}</p>
+        <p ng-show="combo2">Tipo: {{combo2.tipo}}</p>
+
+        
+    </div>
+</body>
+</html>

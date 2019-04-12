@@ -1,0 +1,13 @@
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.card{
+    justify-content: space-evenly;
+}
+body {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}

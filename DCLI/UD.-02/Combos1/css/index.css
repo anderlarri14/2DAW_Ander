@@ -1,0 +1,49 @@
+body {
+    background-color: #fee4d9
+}
+
+#elegir {
+    margin: 40px;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: burlywood;
+}
+#elegir2 {
+    margin: 40px;
+    margin-bottom: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: burlywood;
+}
+
+table {
+    margin: auto;
+    width: 400px;
+    background-color: white
+}
+
+th {
+    background-color: burlywood;
+    color: white;
+}
+
+#resultado {
+    display: table;
+    width: 96%;
+    margin: auto
+}
+
+#izda {
+    display: table-cell;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+#dcha {
+    display: table-cell;
+    width: 48%;
+    box-sizing: border-box;
+    background-color: burlywood;
+    color: white;
+}

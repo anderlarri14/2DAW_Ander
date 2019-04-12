@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Scripts -->
+    <script src="../../js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="../../js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="../../js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Empieza el html -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Perfiles
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="../ander/index.html">Ander</a>
+                            <a class="dropdown-item" href="#">Mikel</a>
+                            <a class="dropdown-item" href="../sara/sara.html">Sara</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- El jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 id="jumbotronHeader" class="display-4">Título Súper Chulo</h1>
+                <p id="descripcionJumbotronHeader" class="lead">Cáncer es el nombre común que recibe un conjunto de
+                    enfermedades relacionadas en las que se observa un
+                    proceso descontrolado en la división de las células del cuerpo.</p>
+            </div>
+        </div>
+        <!-- onmouseout="cambiarJumbotron('nada')" -->
+        <div class="card-deck m-5">
+            <div class="card" onmouseover="cambiarJumbotron('card1')">
+                <img class="card-img-top" src="https://i.imgur.com/Mi2XI3x.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional
+                        content. This content is a little bit longer.</p>
+
+                </div>
+                <button type="button" onclick="cambiarJumbotron('jumbo1')" class="btn btn-dark">Ver info</button>
+            </div>
+
+            <div class="card" onmouseover="cambiarJumbotron('card2')">
+                <img class="card-img-top" src="https://i.imgur.com/A0CGbYN.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                        content.</p>
+                </div>
+                <button type="button" onclick="cambiarJumbotron('jumbo2')" class="btn btn-dark">Ver info</button>
+            </div>
+
+            <div class="card" onmouseover="cambiarJumbotron('card3')">
+                <img class="card-img-top" src="https://i.imgur.com/WCAHKyZ.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional
+                        content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <button type="button" onclick="cambiarJumbotron('jumbo3')" class="btn btn-dark">Ver info</button>
+            </div>
+        </div>
+
+        <!-- El vídeo en una tarjeta dentro del jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container-fluid mx-6">
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <h5 id="jumbotitle" class="card-title text-center">ESTO CAMBIA SEGÚN EL BOTÓN QUE PULSES</h5>
+                        <h6 id="jumbosubtitle" class="card-subtitle mb-2 text-muted text-center">Pues un vídeo súper chulo</h6>
+                        <p id="jumbotext" class="card-text">SFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFWEFEWSFSEWFEWFFEW</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body ">
+                        <h5 class="card-title text-center">Vídeo</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-center">Pues un vídeo súper chulo</h6>
+                        <div class="video text-center">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/djV11Xbc914"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

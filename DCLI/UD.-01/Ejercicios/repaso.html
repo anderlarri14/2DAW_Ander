@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Repaso</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="repaso.js"></script>
+</head>
+
+<body>
+    <p>
+        <h1 id="tituloh1">ELEMENTO DESBERDINEN PROPIETATEAK LORTU</h1> <button onclick="idioma('CAMBIAR PROPIEDADES DE DIFERENTES ELEMENTOS')">CASTELLANO</button><button
+            onclick="idioma('ELEMENTO DESBERDINEN PROPIETATEAK LORTU')">EUSKERA</button>
+    </p>
+    <p name="textop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet mi nibh, a placerat
+        eros rutrum eu. Cras porta fermentum consequat. Donec placerat erat enim, et pulvinar justo congue quis.
+        Curabitur dictum sollicitudin sollicitudin. </p>
+    <p name="textop">Duis tincidunt, eros in interdum ultricies, quam dui fringilla dam, sed cursus massa ipsum eget
+        leo. Integer viverra tempus auctor. Phasellus ullamcorper dictum nulla.</p>
+    <p name="textop">Curabitur vehicula arcu sed pulvinar aliquam. Integer eu diam id lorem aliquam feugiat. Aliquam
+        quis tincidunt erat, eget tempus eros. Fusce luctus ultrices tellus at commodo.</p>
+    <p name="textop">Nam pulvinar leo et justo scelerisque interdum.</p>
+    <p name="textop"><img id="irudia" src="img/repaso1.jpeg" height="167" onmouseover="puente()" onmouseout="monte()"></p>
+    <ul>
+        <form name="FormFondo" action="" method="get">
+
+            <p>
+                Elige tama�o de la fuente para los parrafos:
+
+                <input id="uno" type="radio" name="fuente" value="todos" onclick="tamañoFuente('small')" /> <label for="uno">Peque�o</label>
+                <input id="dos" type="radio" name="fuente" value="solotexto" onclick="tamañoFuente('medium')" /> <label for="dos">Mediano</label>
+                <input id="tres" type="radio" name="fuente" value="colorh1" onclick="tamañoFuente('large')" /> <label for="tres">Grande</label>
+            </p>
+        </form>
+
+        <form name="FormEncuesta" action="http://www.google.es" method="get" onSubmit="return Balidatu()">
+            IZENA
+            <input type="text" name="Izena" id="Izena">
+            ADINA
+            <input type="text" name="Adina" id="Adina" onblur="alert('hola')">
+            </p>
+            <p>ORRIAREN BALORAZIOA
+                <label for="frmBalorazioa"></label>
+                <input type="text" name="Balorazioa" id="Balorazioa">
+                <input type="submit" name="BIDALI" id="BIDALI" value="Bidali">
+            </p>
+        </form>
+        <div id="idPalabra">
+            <p> Teclea una palabra</p><input type="text" id="palabra">
+            <input type="button" name="BotonCrear" value="Deletrear" onclick="CrearBotones()">
+            <div id="ZonaBotones"> </div>
+        </div>
+</body>
+
+</html>

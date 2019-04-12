@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>GESTION DE ALUMNOS</title>
+    <link href="../css/ARIK14.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="../JS/script.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="page">
+        <div class="content">
+            <h1>IKASTETXEAREN GESTIOA</h1>
+            <hr/>
+            <section id="central">
+                <aside class="vertical-menu">
+                    <a href="#" class="active">IKASLEAK</a>
+                    <a href="#" id="add" data-id="0">Añadir </a>
+                    <a href="#" id="Modificar" data-id="1">Modificar</a>
+                    <a href="#" id="del" data-id="2">Borrar</a>
+                    <a href="#" class="active" data-id="3">KONTSULTAK</a>
+                    <a href="#" id="view" data-id="4">Ikasleak</a>
+                </aside>
+                <div class="dcha">
+                    <!-- <div id="zonaIkasle">
+                        <label >ID</label><input  type="text" id="ikasleId" disabled><br>
+                        <label >NOMBRE</label><input  type="text" id="ikasleNombre" class="valores">
+                        <select  id="ikasleNombresTodos"></select><br>
+                        <label ">EDAD</label><input  type="text" id="ikasleEdad" class="valores">
+                        <br>
+                        <label ">CURSO</label><input  type="text" id="ikasleCurso" class="valores">
+                        <br>
+                        
+                        <input  type="button" value="aceptar" id="ikasleGuardar">
+                        <input  type="button" value="cancelar" id="ikasleCancelar">
+                        <br>
+                    </div> -->
+                    <div id="zonaAdd">
+                        <h1>Añadir</h1>
+                        <hr>
+                        <label >ID</label><input  type="text" id="ikasleId" disabled><br>
+                        <label >NOMBRE</label><input  type="text" id="ikasleNombre" class="valores">
+                        <br>
+                        <label ">EDAD</label><input  type="text" id="ikasleEdad" class="valores">
+                        <br>
+                        <label ">CURSO</label><input  type="text" id="ikasleCurso" class="valores">
+                        <br>
+
+                        <input  type="submit" value="aceptar" id="ikasleGuardar">
+                        <input  type="button" value="cancelar" id="ikasleCancelar">
+                        <br>
+                    </div>
+                    <div id="zonaDel">
+                        <h1>Delete</h1>
+                        <hr>
+                        <h4> Usuario a eliminar: </h4>
+                        <select id="selectDel">
+
+                        </select>
+                        <input type="button" value="BORRAR" id="borrarIkasle">
+                    </div>
+                    <div  id="zonaConsulta">
+                        
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

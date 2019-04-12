@@ -1,0 +1,53 @@
+<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>GESTION DE ALUMNOS</title>
+    <link href="../css/ARIK14.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="../JS/js.js" type="text/javascript"></script>
+    <script src="../JS/FuncionesGenerales.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+    <div class="page">
+        <div class="content">
+            <h1>IKASTETXEAREN GESTIOA</h1>
+            <hr />
+
+            <section id="central">
+                <aside class="vertical-menu">
+                    <a href="#" class="active">IKASLEAK</a>
+                    <a href="#" id="Añadir" data-id="0">Añadir </a>
+                    <a href="#" id="Modificar" data-id="1">Modificar</a>
+                    <a href="#" id="Borrar" data-id="2">Borrar</a>
+                    <a href="#" class="active" data-id="3">KONTSULTAK</a>
+                    <a href="#" id="Ver" data-id="4">Ikasleak</a>
+                </aside>
+                <div class="dcha">
+                    <div id="zonaIkasle">
+                        <label class="ocultar">ID</label><input class="ocultar" type="text" id="ikasleId" disabled><br>
+                        <label class="ocultar">NOMBRE</label><input class="ocultar" type="text" id="ikasleNombre" class="valores">
+                        <select class="ocultar" id="ikasleNombresTodos"></select><br>
+                        <label class="ocultar">EDAD</label><input class="ocultar" type="text" id="ikasleEdad" class="valores">
+                        <br>
+                        <label class="ocultar">CURSO</label><input class="ocultar" type="text" id="ikasleCurso" class="valores">
+                        <br>
+
+                        <input class="ocultar" type="button" value="aceptar" id="ikasleGuardar">
+                        <input class="ocultar" type="button" value="cancelar" id="ikasleCancelar">
+                        <br>
+
+                    </div>
+                    <div class="ocultar" id="zonaConsulta">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

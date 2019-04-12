@@ -1,0 +1,8 @@
+.jumbotron{
+    height: 400px;
+    background-image: url("../img/img8.JPG");
+}
+
+.card-deck{
+    justify-content: space-evenly !important;
+}

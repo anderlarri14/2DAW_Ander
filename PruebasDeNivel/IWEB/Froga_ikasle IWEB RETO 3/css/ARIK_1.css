@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#idButtonBuscar {
+    color: #000040;
+    min-width: 80px;
+    min-height: 20px;
+}
+
+.menu label {
+    width: 100px;
+
+}
+
+.menu select {
+    width: 100px;
+    color: black;
+}
+
+/*  codigo zona libros*/
+
+.container {
+    background-color: #002c3c;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 1.5em;
+    /*display:none;*/
+}
+
+.libro {
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid gray;
+    margin-bottom: 5px;
+}
+
+#divLibros {
+    margin: 15px;
+}
+
+.caratula {
+    width: 150px;
+    height: 175px;
+    display: inline-block;
+    float: right;
+}
+
+.libro .datoslibro {
+    display: block;
+    float: left;
+    color: black;
+    font-size: 14;
+
+}
+
+#titulolibro {
+    font-size: 16px;
+    color: blue;
+}
+
+#novedadlibro {
+    margin: 5px;
+    width: 80px;
+    background-color: blue;
+    color: yellow;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+.container{
+    display: none;
+}
+#divLibros{
+    display: none;
+}
+#idDivLogin{
+    display: none;
+    grid-template-columns: 25%;
+    justify-content: right;
+    height:150px;
+}
+.formLogin{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(3,20%);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin-right: 20px;
+    background-color: lightcyan;
+    border-radius: 5px;
+    
+}
+.linea{
+    display:grid;
+    grid-template-columns: 40% 40%;
+    justify-content:space-evenly;
+}
+.linea>span{
+    display: grid;
+    align-content: center;
+}
+.linea>input{
+    border: 2px solid red;
+}
+.lineaBotones{
+    display:grid;
+    grid-template-columns: 30% 30%;
+    grid-column-gap: 10px;
+    justify-content:left;
+
+}
+.lineaBotones>button{
+    background-color: transparent;
+    border:1px solid black;
+}
+.lineaBotones>a{
+    display: grid;
+    background-color: transparent;
+    border:1px solid black;
+    justify-content: center;
+    align-content: center;
+}
+.lineaBotones>a:hover{
+    cursor: pointer;
+}
+.linea>input:focus{
+    animation-name: ensanchar;
+    animation-duration: 2s;
+    width:140%;
+}
+.linea>input:valid{
+    border:2px solid green;
+}
+
+@keyframes ensanchar {
+    from {
+        width: 100%;
+        height: 100%;
+    }
+    
+    to {
+        height: 120%;
+        width: 140%;
+    }
+}
+
+#clickBiblioteca{
+    /* display: none; */
+}

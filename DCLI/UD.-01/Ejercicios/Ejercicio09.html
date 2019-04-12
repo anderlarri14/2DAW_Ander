@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio09</title>
+</head>
+<body>
+    <script>
+        document.write("<p>Los numeros pares entre 0 y 100 de 5 en 5</p>");
+        var cont = 0;
+        document.write("<p>");
+
+        for (let i = 2; i <= 100; i = i+2) {
+            document.write(i+", ");
+            cont++;
+
+            if (cont>4) {
+                document.write("</br>");
+                cont = 0;
+            }
+
+        }
+        document.write("</p>");
+    </script>
+</body>
+</html>

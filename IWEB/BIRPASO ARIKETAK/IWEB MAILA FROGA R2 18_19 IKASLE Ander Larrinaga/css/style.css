@@ -1,0 +1,67 @@
+body {
+    background-color: #eee;
+}
+
+#web {
+    color: brown;
+}
+#imagen {
+    background-color: #fcc !important;
+}
+
+#news{
+    background-image: linear-gradient(black, white);
+}
+
+.card {
+    display: inline-block;
+
+}
+#nones{
+    border: 2px solid blue;
+    border-radius: 25px;
+    background-color: lime;
+}
+#pares{
+    border: 2px solid green;
+    background-color: plum;
+}
+.card>h2 {
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: justify;
+}
+.card>p{
+    padding: 10px;
+    text-align: justify;
+}
+#details{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+hr{
+    border-bottom: 1px solid black;
+    width: 65%;
+    margin-right: 100%;
+}
+ul{list-style: none;}
+label{
+    margin-left: 15px;
+    width:220px;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+}
+input:focus{
+    background-color: #e5ff3f;
+    
+}
+#invis{
+    visibility: hidden;
+}
+
+#erfocu:focus{
+    visibility: visible;
+}
